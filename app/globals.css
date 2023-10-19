@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* 
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
+
+body{
+  background-color: #1C1C1C;
+}
+
+
+html{
+  overflow-x: hidden;
+}
+
+
+
+@font-face {
+  font-family: "Town 10 Display W05 Black";
+  src: url("https://db.onlinewebfonts.com/t/fc2fb6bfda3f4ab8a893ef037bcf3947.eot");
+  src: url("https://db.onlinewebfonts.com/t/fc2fb6bfda3f4ab8a893ef037bcf3947.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/fc2fb6bfda3f4ab8a893ef037bcf3947.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/fc2fb6bfda3f4ab8a893ef037bcf3947.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/fc2fb6bfda3f4ab8a893ef037bcf3947.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/fc2fb6bfda3f4ab8a893ef037bcf3947.svg#Town 10 Display W05 Black")format("svg");
+}
+
+
+@font-face{
+  font-family: 'Rubik Mono One';
+  src: local('Rubik Mono One'), url(/fonts/RubikMonoOne-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Town 10 Display';
+  src: local('Town 10 Display'), url(/fonts/town-10-display.otf) format('opentype');
+}
+
+.rubik-mono-one {
+  font-family: 'Rubik Mono One', sans-serif;
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  /* font-size: 95.6px; */
+  line-height: 120%;
+  /* or 115px */
+  letter-spacing: -0.06em;
+  color: #FFFFFF;
+} 
+
+.towntendisplay{
+  font-family: "Town 10 Display W05 Black";
+}
+
+.town10display-regular{
+  font-family: "Town 10 Display";
+  font-weight: 400;
+}
+
+textarea{
+  bottom: none;
+}
+
+
+/* maps */
+.map{
+  filter: grayscale(20%) invert(95%);
+}
+.mapouter{position:relative;text-align:right;height:500px;width:600px;}
+.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}
+
+
+* {
+  scroll-margin-top: 150px;
+}
+
+.upload_btn {
+  background: url(/images/button1.png) no-repeat;
+  width: 300px;
+  height: 75px;
+  background-size: cover;
+}
+
+.upload_btn:hover {
+  background: url(/images/button1Active.png);
+  width: 300px;
+  height: 75px;
+  scale: 1.1;
+  background-size: contain;
+}
+
+.audio_btn{
+  background: url(/images/UploadButton.png) no-repeat;
+  width: 8rem;
+  height: 8rem;
+  background-size: cover;
+  scale: 0.8;
+  transition: all 0.5s ease-in-out;
+}
+
+.audio_btn:hover{
+  background: url(/images/UploadButtonActive.png) no-repeat;
+  width: 8rem;
+  height: 8rem;
+  scale: 1;
+  background-size: contain;
+  transition: all 0.5s ease-in-out;
+
+}
+
+.audio_upload_btn{
+  background: url(/images/UploadButton_1.png) no-repeat;
+  width: 12rem;
+  height: 4.6rem;
+  background-size: cover;
+  transition: all 0.5s ease-in-out;
+}
+
+.audio_upload_btn:hover{
+  background: url(/images/UploadButton_1Active.png) no-repeat;
+  width: 12rem;
+  height: 4.6rem;
+  background-size: cover;
+  transition: all 0.5s ease-in-out;
+
+}
